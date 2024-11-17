@@ -1,0 +1,44 @@
+name: flourish
+description: "Webview app for local vtu"
+
+publish_to: "none" 
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  webview_flutter: ^4.9.0
+  url_launcher: ^6.3.0
+  flutter_spinkit: ^5.2.1
+  dio: ^5.7.0
+  lottie: ^3.1.2
+  share_plus:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons:
+  flutter_native_splash: ^2.4.1
+
+
+flutter:
+  uses-material-design: true
+flutter_launcher_icons:
+  image_path: "assets/splash.png"
+  adaptive_icon_foreground: "assets/splash.png"
+  android: true
+  ios: true
+  adaptive_icon_background: "#ffffff"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash.png
+  color_dark: "#000000"
+
+  android_12:
+    image: assets/splash.png
+    color: "#ffffff"
