@@ -16,6 +16,10 @@ dependencies:
   dio: ^5.7.0
   lottie: ^3.1.2
   share_plus:
+  flutter_app_lock: ^4.1.1+1
+  gap: ^3.0.1
+  local_auth: ^2.3.0
+  shared_preferences: ^2.3.3
 
 dev_dependencies:
   flutter_test:
@@ -27,6 +31,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/lottie/
+    - assets/bg.jpg
 flutter_launcher_icons:
   image_path: "assets/splash.png"
   adaptive_icon_foreground: "assets/splash.png"

@@ -36,8 +36,8 @@ class _ModernWebViewPageState extends State<ModernWebViewPage> {
 
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
-        statusBarIconBrightness: Brightness.dark,
+        statusBarColor: Colors.blue,
+        statusBarIconBrightness: Brightness.light,
         systemNavigationBarColor: Colors.transparent,
         systemNavigationBarIconBrightness: Brightness.dark,
       ),
@@ -59,7 +59,7 @@ class _ModernWebViewPageState extends State<ModernWebViewPage> {
               }
             });
           }
-        
+
           setState(() {
             _isLoading = true;
             _loadingProgress = 0.0;
@@ -109,7 +109,7 @@ class _ModernWebViewPageState extends State<ModernWebViewPage> {
     setState(() {
       _showFloatingControls = true;
     });
-    _controlsTimer = Timer(const Duration(seconds: 3), () {
+    _controlsTimer = Timer(const Duration(seconds: 6), () {
       if (mounted) {
         setState(() {
           _showFloatingControls = false;
